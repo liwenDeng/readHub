@@ -10,8 +10,6 @@
 		7445208205400E07EF382FDC /* Pods_MSReadhub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95BEC2A073D7822F20E911EF /* Pods_MSReadhub.framework */; };
 		B69DF17694818F55A14E20B6 /* Pods_MSReadhubTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 422A8C25D56E1A6EF56370D0 /* Pods_MSReadhubTests.framework */; };
 		BC34F10F1EF0D97E005D1332 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC34F10E1EF0D97E005D1332 /* AppDelegate.swift */; };
-		BC34F1111EF0D97E005D1332 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC34F1101EF0D97E005D1332 /* ViewController.swift */; };
-		BC34F1141EF0D97E005D1332 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC34F1121EF0D97E005D1332 /* Main.storyboard */; };
 		BC34F1161EF0D97E005D1332 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC34F1151EF0D97E005D1332 /* Assets.xcassets */; };
 		BC34F1191EF0D97E005D1332 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC34F1171EF0D97E005D1332 /* LaunchScreen.storyboard */; };
 		BC34F1241EF0D97E005D1332 /* MSReadhubTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC34F1231EF0D97E005D1332 /* MSReadhubTests.swift */; };
@@ -47,12 +45,10 @@
 		95BEC2A073D7822F20E911EF /* Pods_MSReadhub.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MSReadhub.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DF25D58215F12990277F897 /* Pods-MSReadhub.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MSReadhub.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MSReadhub/Pods-MSReadhub.debug.xcconfig"; sourceTree = "<group>"; };
 		BC34F10B1EF0D97E005D1332 /* MSReadhub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MSReadhub.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		BC34F10E1EF0D97E005D1332 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BC34F1101EF0D97E005D1332 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		BC34F1131EF0D97E005D1332 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		BC34F1151EF0D97E005D1332 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BC34F10E1EF0D97E005D1332 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = MSReadhub/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
+		BC34F1151EF0D97E005D1332 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
 		BC34F1181EF0D97E005D1332 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		BC34F11A1EF0D97E005D1332 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC34F11A1EF0D97E005D1332 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
 		BC34F11F1EF0D97E005D1332 /* MSReadhubTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MSReadhubTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC34F1231EF0D97E005D1332 /* MSReadhubTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSReadhubTests.swift; sourceTree = "<group>"; };
 		BC34F1251EF0D97E005D1332 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -127,12 +123,15 @@
 		BC34F10D1EF0D97E005D1332 /* MSReadhub */ = {
 			isa = PBXGroup;
 			children = (
-				BC34F10E1EF0D97E005D1332 /* AppDelegate.swift */,
-				BC34F1101EF0D97E005D1332 /* ViewController.swift */,
-				BC34F1121EF0D97E005D1332 /* Main.storyboard */,
-				BC34F1151EF0D97E005D1332 /* Assets.xcassets */,
-				BC34F1171EF0D97E005D1332 /* LaunchScreen.storyboard */,
-				BC34F11A1EF0D97E005D1332 /* Info.plist */,
+				BC34F13D1EF0DBF4005D1332 /* Utils */,
+				BC34F13E1EF0DBF4005D1332 /* ThirdParty */,
+				BC34F13F1EF0DBF4005D1332 /* SupportingFiles */,
+				BC34F1451EF0DBF4005D1332 /* AppDelegate */,
+				BC34F1401EF0DBF4005D1332 /* Resource */,
+				BC34F1411EF0DBF4005D1332 /* Modules */,
+				BC34F1421EF0DBF4005D1332 /* Manager */,
+				BC34F1431EF0DBF4005D1332 /* Define */,
+				BC34F1441EF0DBF4005D1332 /* Base */,
 			);
 			path = MSReadhub;
 			sourceTree = "<group>";
@@ -153,6 +152,129 @@
 				BC34F1301EF0D97E005D1332 /* Info.plist */,
 			);
 			path = MSReadhubUITests;
+			sourceTree = "<group>";
+		};
+		BC34F13D1EF0DBF4005D1332 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		BC34F13E1EF0DBF4005D1332 /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ThirdParty;
+			sourceTree = "<group>";
+		};
+		BC34F13F1EF0DBF4005D1332 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				BC34F11A1EF0D97E005D1332 /* Info.plist */,
+				BC34F1171EF0D97E005D1332 /* LaunchScreen.storyboard */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		BC34F1401EF0DBF4005D1332 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				BC34F1151EF0D97E005D1332 /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		BC34F1411EF0DBF4005D1332 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				BC34F1491EF0DC82005D1332 /* Templates */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		BC34F1421EF0DBF4005D1332 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		BC34F1431EF0DBF4005D1332 /* Define */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Define;
+			sourceTree = "<group>";
+		};
+		BC34F1441EF0DBF4005D1332 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				BC34F1461EF0DC6D005D1332 /* Models */,
+				BC34F1471EF0DC6D005D1332 /* ViewControllers */,
+				BC34F1481EF0DC6D005D1332 /* Views */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		BC34F1451EF0DBF4005D1332 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				BC34F10E1EF0D97E005D1332 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		BC34F1461EF0DC6D005D1332 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BC34F1471EF0DC6D005D1332 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		BC34F1481EF0DC6D005D1332 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BC34F1491EF0DC82005D1332 /* Templates */ = {
+			isa = PBXGroup;
+			children = (
+				BC34F14A1EF0DC82005D1332 /* Models */,
+				BC34F14B1EF0DC82005D1332 /* ViewControllers */,
+				BC34F14C1EF0DC82005D1332 /* Views */,
+			);
+			path = Templates;
+			sourceTree = "<group>";
+		};
+		BC34F14A1EF0DC82005D1332 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BC34F14B1EF0DC82005D1332 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		BC34F14C1EF0DC82005D1332 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		FF585CFCAAD44CEC713B8F30 /* Frameworks */ = {
@@ -283,7 +405,6 @@
 			files = (
 				BC34F1191EF0D97E005D1332 /* LaunchScreen.storyboard in Resources */,
 				BC34F1161EF0D97E005D1332 /* Assets.xcassets in Resources */,
-				BC34F1141EF0D97E005D1332 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,7 +567,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC34F1111EF0D97E005D1332 /* ViewController.swift in Sources */,
 				BC34F10F1EF0D97E005D1332 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -483,20 +603,13 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		BC34F1121EF0D97E005D1332 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BC34F1131EF0D97E005D1332 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		BC34F1171EF0D97E005D1332 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				BC34F1181EF0D97E005D1332 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -700,6 +813,7 @@
 				BC34F1351EF0D97E005D1332 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BC34F1361EF0D97E005D1332 /* Build configuration list for PBXNativeTarget "MSReadhubTests" */ = {
 			isa = XCConfigurationList;
@@ -708,6 +822,7 @@
 				BC34F1381EF0D97E005D1332 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BC34F1391EF0D97E005D1332 /* Build configuration list for PBXNativeTarget "MSReadhubUITests" */ = {
 			isa = XCConfigurationList;
@@ -716,6 +831,7 @@
 				BC34F13B1EF0D97E005D1332 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
