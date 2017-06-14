@@ -1,0 +1,16 @@
+platform :ios, ‘8.0’
+use_frameworks!
+
+target ‘MSReadhub’ do
+    pod 'Alamofire', '~> 4.4'
+    
+    target 'MSReadhubTests' do
+        inherit! :search_paths
+        # Pods for testing
+    end
+    
+    target 'MSReadhubUITests' do
+        inherit! :search_paths
+        # Pods for testing
+    end
+end

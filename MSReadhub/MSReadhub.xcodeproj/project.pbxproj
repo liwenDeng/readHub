@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7445208205400E07EF382FDC /* Pods_MSReadhub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95BEC2A073D7822F20E911EF /* Pods_MSReadhub.framework */; };
+		B69DF17694818F55A14E20B6 /* Pods_MSReadhubTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 422A8C25D56E1A6EF56370D0 /* Pods_MSReadhubTests.framework */; };
 		BC34F10F1EF0D97E005D1332 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC34F10E1EF0D97E005D1332 /* AppDelegate.swift */; };
 		BC34F1111EF0D97E005D1332 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC34F1101EF0D97E005D1332 /* ViewController.swift */; };
 		BC34F1141EF0D97E005D1332 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC34F1121EF0D97E005D1332 /* Main.storyboard */; };
@@ -14,6 +16,7 @@
 		BC34F1191EF0D97E005D1332 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC34F1171EF0D97E005D1332 /* LaunchScreen.storyboard */; };
 		BC34F1241EF0D97E005D1332 /* MSReadhubTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC34F1231EF0D97E005D1332 /* MSReadhubTests.swift */; };
 		BC34F12F1EF0D97E005D1332 /* MSReadhubUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC34F12E1EF0D97E005D1332 /* MSReadhubUITests.swift */; };
+		EDA819475F88060C3A895FA0 /* Pods_MSReadhubUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FF2F0E9249AF2D8D167D47C /* Pods_MSReadhubUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2A42715C1F651014C3C905FC /* Pods-MSReadhubUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MSReadhubUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MSReadhubUITests/Pods-MSReadhubUITests.release.xcconfig"; sourceTree = "<group>"; };
+		36A1333DFE196A7D39E21EC9 /* Pods-MSReadhubTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MSReadhubTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MSReadhubTests/Pods-MSReadhubTests.release.xcconfig"; sourceTree = "<group>"; };
+		3FF2F0E9249AF2D8D167D47C /* Pods_MSReadhubUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MSReadhubUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		422A8C25D56E1A6EF56370D0 /* Pods_MSReadhubTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MSReadhubTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		47FF4FE512983D017BAD6CB0 /* Pods-MSReadhubTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MSReadhubTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MSReadhubTests/Pods-MSReadhubTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7AEAFF50BCF7032A187BEAE3 /* Pods-MSReadhub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MSReadhub.release.xcconfig"; path = "Pods/Target Support Files/Pods-MSReadhub/Pods-MSReadhub.release.xcconfig"; sourceTree = "<group>"; };
+		88C6142F02132903AAD1196A /* Pods-MSReadhubUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MSReadhubUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MSReadhubUITests/Pods-MSReadhubUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		95BEC2A073D7822F20E911EF /* Pods_MSReadhub.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MSReadhub.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DF25D58215F12990277F897 /* Pods-MSReadhub.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MSReadhub.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MSReadhub/Pods-MSReadhub.debug.xcconfig"; sourceTree = "<group>"; };
 		BC34F10B1EF0D97E005D1332 /* MSReadhub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MSReadhub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC34F10E1EF0D97E005D1332 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC34F1101EF0D97E005D1332 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7445208205400E07EF382FDC /* Pods_MSReadhub.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B69DF17694818F55A14E20B6 /* Pods_MSReadhubTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +82,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDA819475F88060C3A895FA0 /* Pods_MSReadhubUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		54D133E5E175BA2EB686010B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9DF25D58215F12990277F897 /* Pods-MSReadhub.debug.xcconfig */,
+				7AEAFF50BCF7032A187BEAE3 /* Pods-MSReadhub.release.xcconfig */,
+				47FF4FE512983D017BAD6CB0 /* Pods-MSReadhubTests.debug.xcconfig */,
+				36A1333DFE196A7D39E21EC9 /* Pods-MSReadhubTests.release.xcconfig */,
+				88C6142F02132903AAD1196A /* Pods-MSReadhubUITests.debug.xcconfig */,
+				2A42715C1F651014C3C905FC /* Pods-MSReadhubUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		BC34F1021EF0D97E005D1332 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +109,8 @@
 				BC34F1221EF0D97E005D1332 /* MSReadhubTests */,
 				BC34F12D1EF0D97E005D1332 /* MSReadhubUITests */,
 				BC34F10C1EF0D97E005D1332 /* Products */,
+				54D133E5E175BA2EB686010B /* Pods */,
+				FF585CFCAAD44CEC713B8F30 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +155,16 @@
 			path = MSReadhubUITests;
 			sourceTree = "<group>";
 		};
+		FF585CFCAAD44CEC713B8F30 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				95BEC2A073D7822F20E911EF /* Pods_MSReadhub.framework */,
+				422A8C25D56E1A6EF56370D0 /* Pods_MSReadhubTests.framework */,
+				3FF2F0E9249AF2D8D167D47C /* Pods_MSReadhubUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +172,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BC34F1331EF0D97E005D1332 /* Build configuration list for PBXNativeTarget "MSReadhub" */;
 			buildPhases = (
+				C9C1AEF1E010E13135FB3A87 /* [CP] Check Pods Manifest.lock */,
 				BC34F1071EF0D97E005D1332 /* Sources */,
 				BC34F1081EF0D97E005D1332 /* Frameworks */,
 				BC34F1091EF0D97E005D1332 /* Resources */,
+				23DD23CA7F9DDDF1D52B54C2 /* [CP] Embed Pods Frameworks */,
+				566A78F458395736D41195C6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +192,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BC34F1361EF0D97E005D1332 /* Build configuration list for PBXNativeTarget "MSReadhubTests" */;
 			buildPhases = (
+				0B811C6D0480727C9F3FDEA7 /* [CP] Check Pods Manifest.lock */,
 				BC34F11B1EF0D97E005D1332 /* Sources */,
 				BC34F11C1EF0D97E005D1332 /* Frameworks */,
 				BC34F11D1EF0D97E005D1332 /* Resources */,
+				2E9EFD8BDF323F76F70CCEE0 /* [CP] Embed Pods Frameworks */,
+				EB4BF57AB6E15CCF7DB3A5EE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +213,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BC34F1391EF0D97E005D1332 /* Build configuration list for PBXNativeTarget "MSReadhubUITests" */;
 			buildPhases = (
+				3DCE97EDBCF6D83EC3397C42 /* [CP] Check Pods Manifest.lock */,
 				BC34F1261EF0D97E005D1332 /* Sources */,
 				BC34F1271EF0D97E005D1332 /* Frameworks */,
 				BC34F1281EF0D97E005D1332 /* Resources */,
+				448F5D497853148C931796FC /* [CP] Embed Pods Frameworks */,
+				F208BAFA6D7E17EBEA7454CE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,6 +302,144 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0B811C6D0480727C9F3FDEA7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		23DD23CA7F9DDDF1D52B54C2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MSReadhub/Pods-MSReadhub-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2E9EFD8BDF323F76F70CCEE0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MSReadhubTests/Pods-MSReadhubTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3DCE97EDBCF6D83EC3397C42 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		448F5D497853148C931796FC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MSReadhubUITests/Pods-MSReadhubUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		566A78F458395736D41195C6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MSReadhub/Pods-MSReadhub-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C9C1AEF1E010E13135FB3A87 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EB4BF57AB6E15CCF7DB3A5EE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MSReadhubTests/Pods-MSReadhubTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F208BAFA6D7E17EBEA7454CE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MSReadhubUITests/Pods-MSReadhubUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BC34F1071EF0D97E005D1332 /* Sources */ = {
@@ -412,6 +599,7 @@
 		};
 		BC34F1341EF0D97E005D1332 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DF25D58215F12990277F897 /* Pods-MSReadhub.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MSReadhub/Info.plist;
@@ -424,6 +612,7 @@
 		};
 		BC34F1351EF0D97E005D1332 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AEAFF50BCF7032A187BEAE3 /* Pods-MSReadhub.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MSReadhub/Info.plist;
@@ -436,6 +625,7 @@
 		};
 		BC34F1371EF0D97E005D1332 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47FF4FE512983D017BAD6CB0 /* Pods-MSReadhubTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -450,6 +640,7 @@
 		};
 		BC34F1381EF0D97E005D1332 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36A1333DFE196A7D39E21EC9 /* Pods-MSReadhubTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -464,6 +655,7 @@
 		};
 		BC34F13A1EF0D97E005D1332 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88C6142F02132903AAD1196A /* Pods-MSReadhubUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = MSReadhubUITests/Info.plist;
@@ -477,6 +669,7 @@
 		};
 		BC34F13B1EF0D97E005D1332 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A42715C1F651014C3C905FC /* Pods-MSReadhubUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = MSReadhubUITests/Info.plist;
