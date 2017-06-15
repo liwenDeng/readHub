@@ -7,24 +7,48 @@
 //
 
 import UIKit
+import Alamofire
 
 class MSTopicViewController: MSBaseTableViewController {
 
+    var topicRes: TopicReseponseModel?
+    var expandSections: [Int] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         self.title = "热门"
+        tableView.estimatedSectionHeaderHeight = 140
+        tableView.sectionHeaderHeight = UITableViewAutomaticDimension
+        
+        Alamofire.request("https://api.readhub.me/topic?lastCursor=6783&pageSize=10").responseJSON { (response) in
+            switch response.result {
+            case .success(let json):
+                
+                let dic = json as! NSDictionary
+                self.topicRes = TopicReseponseModel.deserialize(from: dic)
+                self.tableView.reloadData()
+                
+            case .failure(let error):
+                print(error)
+            }
+        }
+        
     }
 }
 
 extension MSTopicViewController {
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
+        return self.topicRes?.data?.count ?? 0
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        if expandSections.contains(section) {
+            return 3
+        } else {
+            return 0
+        }
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -32,11 +56,30 @@ extension MSTopicViewController {
         return cell
     }
     
-    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 44
+//    MARK: HEADER
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        var headerView : MSTopicHeaderView?
+        headerView = tableView.dequeueReusableHeaderFooterView(withIdentifier: "Header") as? MSTopicHeaderView
+        if headerView == nil {
+            headerView = MSTopicHeaderView(reuseIdentifier: "Header")
+        }
+        
+        if let topicModel = topicRes?.data?[section] {
+            headerView?.config(topicModel, section: section)
+        }
+        headerView?.delegate = self
+        
+        return headerView
     }
 }
 
-extension MSTopicViewController {
-
+extension MSTopicViewController: TopicHeaderViewDelegate {
+    func sectionTapped(_ section: Int) {
+        if let index = expandSections.index(of: section) {
+            expandSections.remove(at: index)
+        } else {
+            expandSections.append(section)
+        }
+        tableView.reloadData()
+    }
 }

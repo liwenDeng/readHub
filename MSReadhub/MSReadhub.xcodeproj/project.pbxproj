@@ -26,6 +26,10 @@
 		BC34F17B1EF113D6005D1332 /* TopicModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC34F1791EF113D6005D1332 /* TopicModel.swift */; };
 		BC34F17D1EF1155C005D1332 /* MSBaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC34F17C1EF1155C005D1332 /* MSBaseTableViewCell.swift */; };
 		BC34F1801EF12327005D1332 /* MSTopicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC34F17F1EF12327005D1332 /* MSTopicCell.swift */; };
+		BC4E9D8B1EF26386002B1DF1 /* MSTopicHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4E9D8A1EF26386002B1DF1 /* MSTopicHeaderView.swift */; };
+		BC4E9D8F1EF26D25002B1DF1 /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4E9D8E1EF26D25002B1DF1 /* CustomLabel.swift */; };
+		BC4E9D911EF26DAD002B1DF1 /* UIDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4E9D901EF26DAD002B1DF1 /* UIDefine.swift */; };
+		BC4E9D931EF26FD5002B1DF1 /* ColorUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4E9D921EF26FD5002B1DF1 /* ColorUtil.swift */; };
 		EDA819475F88060C3A895FA0 /* Pods_MSReadhubUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FF2F0E9249AF2D8D167D47C /* Pods_MSReadhubUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -79,6 +83,10 @@
 		BC34F1791EF113D6005D1332 /* TopicModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicModel.swift; sourceTree = "<group>"; };
 		BC34F17C1EF1155C005D1332 /* MSBaseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSBaseTableViewCell.swift; sourceTree = "<group>"; };
 		BC34F17F1EF12327005D1332 /* MSTopicCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSTopicCell.swift; sourceTree = "<group>"; };
+		BC4E9D8A1EF26386002B1DF1 /* MSTopicHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSTopicHeaderView.swift; sourceTree = "<group>"; };
+		BC4E9D8E1EF26D25002B1DF1 /* CustomLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
+		BC4E9D901EF26DAD002B1DF1 /* UIDefine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIDefine.swift; sourceTree = "<group>"; };
+		BC4E9D921EF26FD5002B1DF1 /* ColorUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorUtil.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +191,7 @@
 		BC34F13D1EF0DBF4005D1332 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				BC4E9D921EF26FD5002B1DF1 /* ColorUtil.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -233,6 +242,7 @@
 		BC34F1431EF0DBF4005D1332 /* Define */ = {
 			isa = PBXGroup;
 			children = (
+				BC4E9D901EF26DAD002B1DF1 /* UIDefine.swift */,
 			);
 			path = Define;
 			sourceTree = "<group>";
@@ -278,6 +288,7 @@
 			isa = PBXGroup;
 			children = (
 				BC34F17C1EF1155C005D1332 /* MSBaseTableViewCell.swift */,
+				BC4E9D8E1EF26D25002B1DF1 /* CustomLabel.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -445,6 +456,7 @@
 			isa = PBXGroup;
 			children = (
 				BC34F17F1EF12327005D1332 /* MSTopicCell.swift */,
+				BC4E9D8A1EF26386002B1DF1 /* MSTopicHeaderView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -772,6 +784,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC34F1731EF0E4FB005D1332 /* MSBaseTableViewController.swift in Sources */,
+				BC4E9D8F1EF26D25002B1DF1 /* CustomLabel.swift in Sources */,
+				BC4E9D911EF26DAD002B1DF1 /* UIDefine.swift in Sources */,
+				BC4E9D8B1EF26386002B1DF1 /* MSTopicHeaderView.swift in Sources */,
 				BC34F17B1EF113D6005D1332 /* TopicModel.swift in Sources */,
 				BC34F17D1EF1155C005D1332 /* MSBaseTableViewCell.swift in Sources */,
 				BC34F1711EF0DF7C005D1332 /* MSMyViewController.swift in Sources */,
@@ -784,6 +799,7 @@
 				BC34F14F1EF0DCED005D1332 /* MSBaseViewController.swift in Sources */,
 				BC34F1571EF0DD88005D1332 /* MSTabBarController.swift in Sources */,
 				BC34F16F1EF0DF03005D1332 /* MSNewsViewController.swift in Sources */,
+				BC4E9D931EF26FD5002B1DF1 /* ColorUtil.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,13 +10,32 @@ import UIKit
 
 class MSTopicCell: UITableViewCell {
     
-    var topic: UILabel!
+    var topic: UILabel = UILabel.normalLabel()
+    var source: UILabel = UILabel.detailLabel()
+    
     
     override func setupSubViews() {
         super.setupSubViews()
-        topic = UILabel(frame: CGRect(x: 0, y: 0, width: 100, height: 20))
-        topic.text = "test"
-        contentView .addSubview(topic)
+        contentView.addSubview(topic)
+        topic.snp.makeConstraints { (make) in
+            make.left.equalTo(contentView).offset(14)
+            make.top.equalTo(contentView).offset(8)
+            make.right.equalTo(contentView).offset(-14)
+        }
+        
+        contentView.addSubview(source)
+        source.snp.makeConstraints { (make) in
+            make.left.right.equalTo(topic)
+            make.top.equalTo(topic.snp.bottom).offset(4)
+            make.bottom.equalTo(contentView).offset(-8)
+        }
     }
 
+}
+
+extension MSTopicCell {
+    func config() {
+        
+    }
+    
 }

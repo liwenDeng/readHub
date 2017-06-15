@@ -9,7 +9,7 @@
 import UIKit
 import HandyJSON
 
-class NewsArray :HandyJSON{
+class New :HandyJSON{
     var siteName: String?       //网站名称
     var duplicateId: Int = 0    //分组id
     var id: Int = 0     //详细id
@@ -41,7 +41,7 @@ class NelData :HandyJSON{
 }
 
 class TopicModel :HandyJSON{
-    var newsArray: [NewsArray]? //详细文章链接
+    var newsArray: [New]? //详细文章链接
     var summary: String?    //简介
     var id: Int = 0     //文章id
     var order: Int = 0  //序号
@@ -54,4 +54,13 @@ class TopicModel :HandyJSON{
     
     required init() {}
     
+}
+
+class TopicReseponseModel :HandyJSON {
+    var data: [TopicModel]?
+    var pageSize: Int?
+    var totalItems: Int?
+    var totalPages: Int?
+    
+    required init() {}
 }
