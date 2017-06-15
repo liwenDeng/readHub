@@ -14,6 +14,18 @@
 		BC34F1191EF0D97E005D1332 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC34F1171EF0D97E005D1332 /* LaunchScreen.storyboard */; };
 		BC34F1241EF0D97E005D1332 /* MSReadhubTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC34F1231EF0D97E005D1332 /* MSReadhubTests.swift */; };
 		BC34F12F1EF0D97E005D1332 /* MSReadhubUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC34F12E1EF0D97E005D1332 /* MSReadhubUITests.swift */; };
+		BC34F14F1EF0DCED005D1332 /* MSBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC34F14E1EF0DCED005D1332 /* MSBaseViewController.swift */; };
+		BC34F1571EF0DD88005D1332 /* MSTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC34F1561EF0DD88005D1332 /* MSTabBarController.swift */; };
+		BC34F1591EF0DDBE005D1332 /* MSBaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC34F1581EF0DDBE005D1332 /* MSBaseNavigationController.swift */; };
+		BC34F16B1EF0DEE0005D1332 /* MSTopicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC34F16A1EF0DEE0005D1332 /* MSTopicViewController.swift */; };
+		BC34F16D1EF0DEF6005D1332 /* MSTechViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC34F16C1EF0DEF6005D1332 /* MSTechViewController.swift */; };
+		BC34F16F1EF0DF03005D1332 /* MSNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC34F16E1EF0DF03005D1332 /* MSNewsViewController.swift */; };
+		BC34F1711EF0DF7C005D1332 /* MSMyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC34F1701EF0DF7C005D1332 /* MSMyViewController.swift */; };
+		BC34F1731EF0E4FB005D1332 /* MSBaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC34F1721EF0E4FB005D1332 /* MSBaseTableViewController.swift */; };
+		BC34F17A1EF113D6005D1332 /* NewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC34F1781EF113D6005D1332 /* NewModel.swift */; };
+		BC34F17B1EF113D6005D1332 /* TopicModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC34F1791EF113D6005D1332 /* TopicModel.swift */; };
+		BC34F17D1EF1155C005D1332 /* MSBaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC34F17C1EF1155C005D1332 /* MSBaseTableViewCell.swift */; };
+		BC34F1801EF12327005D1332 /* MSTopicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC34F17F1EF12327005D1332 /* MSTopicCell.swift */; };
 		EDA819475F88060C3A895FA0 /* Pods_MSReadhubUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FF2F0E9249AF2D8D167D47C /* Pods_MSReadhubUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +67,18 @@
 		BC34F12A1EF0D97E005D1332 /* MSReadhubUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MSReadhubUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC34F12E1EF0D97E005D1332 /* MSReadhubUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSReadhubUITests.swift; sourceTree = "<group>"; };
 		BC34F1301EF0D97E005D1332 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC34F14E1EF0DCED005D1332 /* MSBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSBaseViewController.swift; sourceTree = "<group>"; };
+		BC34F1561EF0DD88005D1332 /* MSTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSTabBarController.swift; sourceTree = "<group>"; };
+		BC34F1581EF0DDBE005D1332 /* MSBaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSBaseNavigationController.swift; sourceTree = "<group>"; };
+		BC34F16A1EF0DEE0005D1332 /* MSTopicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSTopicViewController.swift; sourceTree = "<group>"; };
+		BC34F16C1EF0DEF6005D1332 /* MSTechViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSTechViewController.swift; sourceTree = "<group>"; };
+		BC34F16E1EF0DF03005D1332 /* MSNewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSNewsViewController.swift; sourceTree = "<group>"; };
+		BC34F1701EF0DF7C005D1332 /* MSMyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSMyViewController.swift; sourceTree = "<group>"; };
+		BC34F1721EF0E4FB005D1332 /* MSBaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSBaseTableViewController.swift; sourceTree = "<group>"; };
+		BC34F1781EF113D6005D1332 /* NewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewModel.swift; sourceTree = "<group>"; };
+		BC34F1791EF113D6005D1332 /* TopicModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicModel.swift; sourceTree = "<group>"; };
+		BC34F17C1EF1155C005D1332 /* MSBaseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSBaseTableViewCell.swift; sourceTree = "<group>"; };
+		BC34F17F1EF12327005D1332 /* MSTopicCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSTopicCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,15 +147,17 @@
 		BC34F10D1EF0D97E005D1332 /* MSReadhub */ = {
 			isa = PBXGroup;
 			children = (
-				BC34F13D1EF0DBF4005D1332 /* Utils */,
-				BC34F13E1EF0DBF4005D1332 /* ThirdParty */,
-				BC34F13F1EF0DBF4005D1332 /* SupportingFiles */,
 				BC34F1451EF0DBF4005D1332 /* AppDelegate */,
-				BC34F1401EF0DBF4005D1332 /* Resource */,
-				BC34F1411EF0DBF4005D1332 /* Modules */,
-				BC34F1421EF0DBF4005D1332 /* Manager */,
-				BC34F1431EF0DBF4005D1332 /* Define */,
 				BC34F1441EF0DBF4005D1332 /* Base */,
+				BC34F1431EF0DBF4005D1332 /* Define */,
+				BC34F1501EF0DD43005D1332 /* Main */,
+				BC34F1421EF0DBF4005D1332 /* Manager */,
+				BC34F1411EF0DBF4005D1332 /* Modules */,
+				BC34F14D1EF0DCB2005D1332 /* Networking */,
+				BC34F1401EF0DBF4005D1332 /* Resource */,
+				BC34F13F1EF0DBF4005D1332 /* SupportingFiles */,
+				BC34F13E1EF0DBF4005D1332 /* ThirdParty */,
+				BC34F13D1EF0DBF4005D1332 /* Utils */,
 			);
 			path = MSReadhub;
 			sourceTree = "<group>";
@@ -188,7 +214,11 @@
 		BC34F1411EF0DBF4005D1332 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				BC34F1661EF0DE49005D1332 /* My */,
+				BC34F15A1EF0DE3A005D1332 /* News */,
+				BC34F15E1EF0DE3A005D1332 /* Tech */,
 				BC34F1491EF0DC82005D1332 /* Templates */,
+				BC34F1621EF0DE3A005D1332 /* Topic */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -228,6 +258,8 @@
 		BC34F1461EF0DC6D005D1332 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				BC34F1781EF113D6005D1332 /* NewModel.swift */,
+				BC34F1791EF113D6005D1332 /* TopicModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -235,6 +267,9 @@
 		BC34F1471EF0DC6D005D1332 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				BC34F14E1EF0DCED005D1332 /* MSBaseViewController.swift */,
+				BC34F1581EF0DDBE005D1332 /* MSBaseNavigationController.swift */,
+				BC34F1721EF0E4FB005D1332 /* MSBaseTableViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -242,6 +277,7 @@
 		BC34F1481EF0DC6D005D1332 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				BC34F17C1EF1155C005D1332 /* MSBaseTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -271,6 +307,174 @@
 			sourceTree = "<group>";
 		};
 		BC34F14C1EF0DC82005D1332 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BC34F14D1EF0DCB2005D1332 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		BC34F1501EF0DD43005D1332 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				BC34F1511EF0DD43005D1332 /* Models */,
+				BC34F1521EF0DD43005D1332 /* ViewControllers */,
+				BC34F1541EF0DD43005D1332 /* Views */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		BC34F1511EF0DD43005D1332 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BC34F1521EF0DD43005D1332 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				BC34F1561EF0DD88005D1332 /* MSTabBarController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		BC34F1541EF0DD43005D1332 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BC34F15A1EF0DE3A005D1332 /* News */ = {
+			isa = PBXGroup;
+			children = (
+				BC34F15B1EF0DE3A005D1332 /* Models */,
+				BC34F15C1EF0DE3A005D1332 /* ViewControllers */,
+				BC34F15D1EF0DE3A005D1332 /* Views */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		BC34F15B1EF0DE3A005D1332 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BC34F15C1EF0DE3A005D1332 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				BC34F16E1EF0DF03005D1332 /* MSNewsViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		BC34F15D1EF0DE3A005D1332 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BC34F15E1EF0DE3A005D1332 /* Tech */ = {
+			isa = PBXGroup;
+			children = (
+				BC34F15F1EF0DE3A005D1332 /* Models */,
+				BC34F1601EF0DE3A005D1332 /* ViewControllers */,
+				BC34F1611EF0DE3A005D1332 /* Views */,
+			);
+			path = Tech;
+			sourceTree = "<group>";
+		};
+		BC34F15F1EF0DE3A005D1332 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BC34F1601EF0DE3A005D1332 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				BC34F16C1EF0DEF6005D1332 /* MSTechViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		BC34F1611EF0DE3A005D1332 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BC34F1621EF0DE3A005D1332 /* Topic */ = {
+			isa = PBXGroup;
+			children = (
+				BC34F1631EF0DE3A005D1332 /* Models */,
+				BC34F1641EF0DE3A005D1332 /* ViewControllers */,
+				BC34F1651EF0DE3A005D1332 /* Views */,
+			);
+			path = Topic;
+			sourceTree = "<group>";
+		};
+		BC34F1631EF0DE3A005D1332 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BC34F1641EF0DE3A005D1332 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				BC34F16A1EF0DEE0005D1332 /* MSTopicViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		BC34F1651EF0DE3A005D1332 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BC34F17F1EF12327005D1332 /* MSTopicCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BC34F1661EF0DE49005D1332 /* My */ = {
+			isa = PBXGroup;
+			children = (
+				BC34F1671EF0DE49005D1332 /* Models */,
+				BC34F1681EF0DE49005D1332 /* ViewControllers */,
+				BC34F1691EF0DE49005D1332 /* Views */,
+			);
+			path = My;
+			sourceTree = "<group>";
+		};
+		BC34F1671EF0DE49005D1332 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BC34F1681EF0DE49005D1332 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				BC34F1701EF0DF7C005D1332 /* MSMyViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		BC34F1691EF0DE49005D1332 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -567,7 +771,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC34F1731EF0E4FB005D1332 /* MSBaseTableViewController.swift in Sources */,
+				BC34F17B1EF113D6005D1332 /* TopicModel.swift in Sources */,
+				BC34F17D1EF1155C005D1332 /* MSBaseTableViewCell.swift in Sources */,
+				BC34F1711EF0DF7C005D1332 /* MSMyViewController.swift in Sources */,
+				BC34F16D1EF0DEF6005D1332 /* MSTechViewController.swift in Sources */,
+				BC34F1591EF0DDBE005D1332 /* MSBaseNavigationController.swift in Sources */,
+				BC34F17A1EF113D6005D1332 /* NewModel.swift in Sources */,
+				BC34F1801EF12327005D1332 /* MSTopicCell.swift in Sources */,
 				BC34F10F1EF0D97E005D1332 /* AppDelegate.swift in Sources */,
+				BC34F16B1EF0DEE0005D1332 /* MSTopicViewController.swift in Sources */,
+				BC34F14F1EF0DCED005D1332 /* MSBaseViewController.swift in Sources */,
+				BC34F1571EF0DD88005D1332 /* MSTabBarController.swift in Sources */,
+				BC34F16F1EF0DF03005D1332 /* MSNewsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

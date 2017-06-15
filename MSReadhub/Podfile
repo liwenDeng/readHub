@@ -3,6 +3,7 @@ use_frameworks!
 
 target ‘MSReadhub’ do
     pod 'Alamofire', '~> 4.4'
+    pod 'HandyJSON', '~> 1.7.1'
     
     target 'MSReadhubTests' do
         inherit! :search_paths
