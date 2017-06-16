@@ -25,51 +25,15 @@ class MSTechViewController: MSBaseTableViewController {
         
         self.tableView.es_addPullToRefresh {
             [weak self] in
-            Alamofire.request("https://api.readhub.me/technews?lastCursor=@null&pageSize=10").responseJSON { (response) in
-                switch response.result {
-                case .success(let json):
-                    let dic = json as! NSDictionary
-                    let newResults = NewResults.deserialize(from: dic)
-                    self?.news = (newResults?.data)!
-                    self?.tableView.reloadData()
-                case .failure(let error):
-                    print(error)
-                }
-                
-                self?.tableView.es_stopPullToRefresh(ignoreDate: true)
-            }
+            self?.refresh()
         }
         
         self.tableView.es_addInfiniteScrolling {
             [weak self] in
-            
-            let dateString =  self?.news.last?.publishDate
-            let dateFormat = DateFormatter()
-            dateFormat.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
-            let date = dateFormat.date(from: dateString!)
-            
-            let zone:NSTimeZone = NSTimeZone.system as NSTimeZone
-            // 计算本地时区与 GMT 时区的时间差
-            let second:Int = zone.secondsFromGMT
-            
-            let lastTimeInterver = date?.addingTimeInterval(TimeInterval(second)).timeIntervalSince1970
-            let lastCursor = Int(lastTimeInterver!)
-            Alamofire.request("https://api.readhub.me/technews?lastCursor=\(lastCursor )000&pageSize=10").responseJSON { (response) in
-                switch response.result {
-                case .success(let json):
-                    let dic = json as! NSDictionary
-                    let newResults = NewResults.deserialize(from: dic)
-                    if let moreNews = newResults?.data {
-                        self?.news += moreNews
-                    }
-                    self?.tableView.reloadData()
-                case .failure(let error):
-                    print(error)
-                }
-                
-                self?.tableView.es_stopLoadingMore()
-            }
+            self?.loadMore()
         }
+        
+        self.refresh()
     }
     
     override func tableViewStyle() -> UITableViewStyle {
@@ -78,7 +42,46 @@ class MSTechViewController: MSBaseTableViewController {
 
 }
 
+extension MSTechViewController {
+    func refresh() {
+        Alamofire.request("https://api.readhub.me/technews?lastCursor=@null&pageSize=10").responseJSON { (response) in
+            switch response.result {
+            case .success(let json):
+                let dic = json as! NSDictionary
+                let newResults = NewResults.deserialize(from: dic)
+                self.news = (newResults?.data)!
+                self.tableView.reloadData()
+            case .failure(let error):
+                print(error)
+            }
+            
+            self.tableView.es_stopPullToRefresh(ignoreDate: true)
+        }
+    }
+    
+    func loadMore() {
+        
+        let dateString =  MSUtil.convertPublishDateStringToIntervalString(self.news.last?.publishDate)
+        
+        Alamofire.request("https://api.readhub.me/technews?lastCursor=\(dateString)&pageSize=10").responseJSON { (response) in
+            switch response.result {
+            case .success(let json):
+                let dic = json as! NSDictionary
+                let newResults = NewResults.deserialize(from: dic)
+                if let moreNews = newResults?.data {
+                    self.news += moreNews
+                }
+                self.tableView.reloadData()
+            case .failure(let error):
+                print(error)
+            }
+            
+            self.tableView.es_stopLoadingMore()
+        }
+    }
+}
 
+// MARK: - DataSource
 extension MSTechViewController {
     
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -97,4 +100,16 @@ extension MSTechViewController {
         return cell
     }
     
+}
+
+// MARK: - Delegate
+extension MSTechViewController {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let new = news[indexPath.row]
+        let webVC = MSWebViewController()
+        webVC.urlString = new.url
+        webVC.hidesBottomBarWhenPushed = true
+        webVC.title = new.title
+        navigationController?.pushViewController(webVC, animated: true)
+    }
 }

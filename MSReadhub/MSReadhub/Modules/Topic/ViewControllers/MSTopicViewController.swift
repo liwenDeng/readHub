@@ -25,50 +25,64 @@ class MSTopicViewController: MSBaseTableViewController {
         
         self.tableView.es_addPullToRefresh {
             [weak self] in
-            
-            Alamofire.request("https://api.readhub.me/topic?lastCursor=@null&pageSize=10").responseJSON { (response) in
-                switch response.result {
-                case .success(let json):
-                    let dic = json as! NSDictionary
-                    self?.topicRes = TopicReseponseModel.deserialize(from: dic)
-                    self?.tableView.reloadData()
-                case .failure(let error):
-                    print(error)
-                }
-                
-                self?.tableView.es_stopPullToRefresh(ignoreDate: true)
-            }
+            self?.refresh()
         }
         
         self.tableView.es_addInfiniteScrolling { 
             [weak self] in
-            
-            var lastCursor = 0
-            if let lastTopic = self?.topicRes?.data?.last {
-                lastCursor = lastTopic.order
-            }
-            
-            Alamofire.request("https://api.readhub.me/topic?lastCursor=\(lastCursor)&pageSize=10").responseJSON { (response) in
-                switch response.result {
-                case .success(let json):
-                    let dic = json as! NSDictionary
-                    let moreRes = TopicReseponseModel.deserialize(from: dic)
-                    if let moreTopic = moreRes?.data {
-                        self?.topicRes?.data? += moreTopic
-                    }
-                
-                    self?.tableView.reloadData()
-                case .failure(let error):
-                    print(error)
-                }
-                
-                self?.tableView.es_stopLoadingMore()
-            }
+            self?.loadMore()
         }
+        
+        self.refresh()
     }
 }
 
 extension MSTopicViewController {
+    
+    func refresh() {
+        
+        Alamofire.request("https://api.readhub.me/topic?lastCursor=@null&pageSize=10").responseJSON { (response) in
+            switch response.result {
+            case .success(let json):
+                let dic = json as! NSDictionary
+                self.topicRes = TopicReseponseModel.deserialize(from: dic)
+                self.tableView.reloadData()
+            case .failure(let error):
+                print(error)
+            }
+            
+            self.tableView.es_stopPullToRefresh(ignoreDate: true)
+        }
+    }
+    
+    func loadMore() {
+        var lastCursor = 0
+        if let lastTopic = self.topicRes?.data?.last {
+            lastCursor = lastTopic.order
+        }
+        
+        Alamofire.request("https://api.readhub.me/topic?lastCursor=\(lastCursor)&pageSize=10").responseJSON { (response) in
+            switch response.result {
+            case .success(let json):
+                let dic = json as! NSDictionary
+                let moreRes = TopicReseponseModel.deserialize(from: dic)
+                if let moreTopic = moreRes?.data {
+                    self.topicRes?.data? += moreTopic
+                }
+                
+                self.tableView.reloadData()
+            case .failure(let error):
+                print(error)
+            }
+            
+            self.tableView.es_stopLoadingMore()
+        }
+    }
+}
+
+// MARK: - DataSource
+extension MSTopicViewController {
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         return self.topicRes?.data?.count ?? 0
     }
@@ -109,6 +123,20 @@ extension MSTopicViewController {
         headerView?.delegate = self
         
         return headerView
+    }
+}
+
+
+// MARK: - Delegate
+extension MSTopicViewController {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let new: New = topicRes?.data?[indexPath.section].newsArray?[indexPath.row] {
+            let webVC = MSWebViewController()
+            webVC.urlString = new.mobileUrl ?? new.url
+            webVC.hidesBottomBarWhenPushed = true
+            webVC.title = new.title
+            navigationController?.pushViewController(webVC, animated: true)
+        }
     }
 }
 
