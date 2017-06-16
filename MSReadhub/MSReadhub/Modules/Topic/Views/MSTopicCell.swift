@@ -10,8 +10,8 @@ import UIKit
 
 class MSTopicCell: UITableViewCell {
     
-    var topic: UILabel = UILabel.normalLabel()
-    var source: UILabel = UILabel.detailLabel()
+    var topic: UILabel! = UILabel.normalLabel()
+    var source: UILabel! = UILabel.detailLabel()
     
     
     override func setupSubViews() {
@@ -34,8 +34,9 @@ class MSTopicCell: UITableViewCell {
 }
 
 extension MSTopicCell {
-    func config() {
-        
+    func config(_ new: New) {
+        topic.text = "- " + ( new.title ?? "" )
+        source.text = new.siteName
     }
     
 }

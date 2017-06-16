@@ -30,6 +30,7 @@
 		BC4E9D8F1EF26D25002B1DF1 /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4E9D8E1EF26D25002B1DF1 /* CustomLabel.swift */; };
 		BC4E9D911EF26DAD002B1DF1 /* UIDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4E9D901EF26DAD002B1DF1 /* UIDefine.swift */; };
 		BC4E9D931EF26FD5002B1DF1 /* ColorUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4E9D921EF26FD5002B1DF1 /* ColorUtil.swift */; };
+		BC4E9D951EF37B6A002B1DF1 /* MSNewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4E9D941EF37B6A002B1DF1 /* MSNewsCell.swift */; };
 		EDA819475F88060C3A895FA0 /* Pods_MSReadhubUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FF2F0E9249AF2D8D167D47C /* Pods_MSReadhubUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -87,6 +88,7 @@
 		BC4E9D8E1EF26D25002B1DF1 /* CustomLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
 		BC4E9D901EF26DAD002B1DF1 /* UIDefine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIDefine.swift; sourceTree = "<group>"; };
 		BC4E9D921EF26FD5002B1DF1 /* ColorUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorUtil.swift; sourceTree = "<group>"; };
+		BC4E9D941EF37B6A002B1DF1 /* MSNewsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSNewsCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -391,6 +393,7 @@
 		BC34F15D1EF0DE3A005D1332 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				BC4E9D941EF37B6A002B1DF1 /* MSNewsCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -785,6 +788,7 @@
 			files = (
 				BC34F1731EF0E4FB005D1332 /* MSBaseTableViewController.swift in Sources */,
 				BC4E9D8F1EF26D25002B1DF1 /* CustomLabel.swift in Sources */,
+				BC4E9D951EF37B6A002B1DF1 /* MSNewsCell.swift in Sources */,
 				BC4E9D911EF26DAD002B1DF1 /* UIDefine.swift in Sources */,
 				BC4E9D8B1EF26386002B1DF1 /* MSTopicHeaderView.swift in Sources */,
 				BC34F17B1EF113D6005D1332 /* TopicModel.swift in Sources */,

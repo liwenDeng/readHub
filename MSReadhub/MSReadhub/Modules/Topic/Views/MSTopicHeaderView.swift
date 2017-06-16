@@ -16,7 +16,7 @@ protocol TopicHeaderViewDelegate {
 class MSTopicHeaderView: UITableViewHeaderFooterView {
 
     var topic: UILabel! = UILabel.mainLabel()
-    var detail: UILabel! = UILabel.detailLabel()
+    var detail: UILabel! = UILabel.normalLabel()
     
     var topicModel: TopicModel?
     var section: Int?
