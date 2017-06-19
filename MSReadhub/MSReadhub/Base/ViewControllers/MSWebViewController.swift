@@ -28,6 +28,12 @@ class MSWebViewController: GDWebViewController {
             loadURLWithString(urlString)
         }
         
+        let rightBarButton: UIBarButtonItem = UIBarButtonItem(barButtonSystemItem:.save, target: self, action:#selector(rightBarButtonClicked))
+        navigationItem.rightBarButtonItem =  rightBarButton
+    }
+    
+    func rightBarButtonClicked() {
+        print("save")
     }
 
 }

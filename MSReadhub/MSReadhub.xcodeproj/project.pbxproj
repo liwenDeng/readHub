@@ -26,6 +26,8 @@
 		BC34F17B1EF113D6005D1332 /* TopicModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC34F1791EF113D6005D1332 /* TopicModel.swift */; };
 		BC34F17D1EF1155C005D1332 /* MSBaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC34F17C1EF1155C005D1332 /* MSBaseTableViewCell.swift */; };
 		BC34F1801EF12327005D1332 /* MSTopicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC34F17F1EF12327005D1332 /* MSTopicCell.swift */; };
+		BC4CAA511EF7746C00920EAA /* SwiftWebVCActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4CAA4F1EF7746C00920EAA /* SwiftWebVCActivity.swift */; };
+		BC4CAA521EF7746C00920EAA /* SwiftWebVCActivitySafari.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4CAA501EF7746C00920EAA /* SwiftWebVCActivitySafari.swift */; };
 		BC4E9D8B1EF26386002B1DF1 /* MSTopicHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4E9D8A1EF26386002B1DF1 /* MSTopicHeaderView.swift */; };
 		BC4E9D8F1EF26D25002B1DF1 /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4E9D8E1EF26D25002B1DF1 /* CustomLabel.swift */; };
 		BC4E9D911EF26DAD002B1DF1 /* UIDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4E9D901EF26DAD002B1DF1 /* UIDefine.swift */; };
@@ -89,6 +91,8 @@
 		BC34F1791EF113D6005D1332 /* TopicModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicModel.swift; sourceTree = "<group>"; };
 		BC34F17C1EF1155C005D1332 /* MSBaseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSBaseTableViewCell.swift; sourceTree = "<group>"; };
 		BC34F17F1EF12327005D1332 /* MSTopicCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSTopicCell.swift; sourceTree = "<group>"; };
+		BC4CAA4F1EF7746C00920EAA /* SwiftWebVCActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftWebVCActivity.swift; sourceTree = "<group>"; };
+		BC4CAA501EF7746C00920EAA /* SwiftWebVCActivitySafari.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftWebVCActivitySafari.swift; sourceTree = "<group>"; };
 		BC4E9D8A1EF26386002B1DF1 /* MSTopicHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSTopicHeaderView.swift; sourceTree = "<group>"; };
 		BC4E9D8E1EF26D25002B1DF1 /* CustomLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
 		BC4E9D901EF26DAD002B1DF1 /* UIDefine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIDefine.swift; sourceTree = "<group>"; };
@@ -513,6 +517,8 @@
 		BC4E9D9A1EF3CD79002B1DF1 /* GDWebViewController */ = {
 			isa = PBXGroup;
 			children = (
+				BC4CAA4F1EF7746C00920EAA /* SwiftWebVCActivity.swift */,
+				BC4CAA501EF7746C00920EAA /* SwiftWebVCActivitySafari.swift */,
 				BC4E9D9B1EF3CD79002B1DF1 /* GDWebViewController.swift */,
 				BC4E9D9C1EF3CD79002B1DF1 /* GDWebViewNavigationToolbar.swift */,
 			);
@@ -813,6 +819,7 @@
 				BC4E9D8F1EF26D25002B1DF1 /* CustomLabel.swift in Sources */,
 				BC4E9D9E1EF3CD79002B1DF1 /* GDWebViewNavigationToolbar.swift in Sources */,
 				BC4E9D951EF37B6A002B1DF1 /* MSNewsCell.swift in Sources */,
+				BC4CAA521EF7746C00920EAA /* SwiftWebVCActivitySafari.swift in Sources */,
 				BC4E9D911EF26DAD002B1DF1 /* UIDefine.swift in Sources */,
 				BC4E9D8B1EF26386002B1DF1 /* MSTopicHeaderView.swift in Sources */,
 				BC34F17B1EF113D6005D1332 /* TopicModel.swift in Sources */,
@@ -822,6 +829,7 @@
 				BC34F16D1EF0DEF6005D1332 /* MSTechViewController.swift in Sources */,
 				BC4E9D9D1EF3CD79002B1DF1 /* GDWebViewController.swift in Sources */,
 				BC34F1591EF0DDBE005D1332 /* MSBaseNavigationController.swift in Sources */,
+				BC4CAA511EF7746C00920EAA /* SwiftWebVCActivity.swift in Sources */,
 				BC34F17A1EF113D6005D1332 /* NewModel.swift in Sources */,
 				BC34F1801EF12327005D1332 /* MSTopicCell.swift in Sources */,
 				BC34F10F1EF0D97E005D1332 /* AppDelegate.swift in Sources */,

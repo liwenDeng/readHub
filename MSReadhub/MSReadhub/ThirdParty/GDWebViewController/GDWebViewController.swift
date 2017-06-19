@@ -186,6 +186,10 @@ open class GDWebViewController: UIViewController, WKNavigationDelegate, WKUIDele
         webView.stopLoading()
     }
     
+    func webViewNavigationToolbarActivity(_ toolbar: GDWebViewNavigationToolbar) {
+        showActivityViewcontroller()
+    }
+    
     // MARK: WKNavigationDelegate Methods
     
     open func webView(_ webView: WKWebView, didCommit navigation: WKNavigation!) {
@@ -438,5 +442,27 @@ open class GDWebViewController: UIViewController, WKNavigationDelegate, WKUIDele
         
         toolbarContainer = GDWebViewNavigationToolbar(delegate: self)
         toolbarContainer.translatesAutoresizingMaskIntoConstraints = false
+    }
+}
+
+
+// MARK: - Self Add
+extension GDWebViewController {
+    //Activity
+    func showActivityViewcontroller() {
+        guard let url = webView.url else {
+            return
+        }
+        
+        let activities: [UIActivity] = [SwiftWebVCActivitySafari()]
+        let activityController: UIActivityViewController = UIActivityViewController(activityItems: [url], applicationActivities: activities)
+        activityController.excludedActivityTypes = [.airDrop, .addToReadingList]
+        
+        if floor(NSFoundationVersionNumber) > NSFoundationVersionNumber_iOS_7_1 && UIDevice.current.userInterfaceIdiom == UIUserInterfaceIdiom.pad {
+            let ctrl: UIPopoverPresentationController = activityController.popoverPresentationController!
+            ctrl.sourceView = view
+        }
+        
+        present(activityController, animated: true, completion: nil)
     }
 }

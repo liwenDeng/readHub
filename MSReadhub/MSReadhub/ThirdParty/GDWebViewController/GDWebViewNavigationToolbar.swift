@@ -21,6 +21,7 @@ import UIKit
     func webViewNavigationToolbarGoForward(_ toolbar: GDWebViewNavigationToolbar)
     func webViewNavigationToolbarRefresh(_ toolbar: GDWebViewNavigationToolbar)
     func webViewNavigationToolbarStop(_ toolbar: GDWebViewNavigationToolbar)
+    func webViewNavigationToolbarActivity(_ toolbar: GDWebViewNavigationToolbar)
 }
 
 class GDWebViewNavigationToolbar: UIView {
@@ -99,9 +100,9 @@ class GDWebViewNavigationToolbar: UIView {
         set(value) {
             if _toolbar != nil {
                 if value && !_showsStopRefreshControl {
-                    _toolbar.setItems([_backButtonItem, _forwardButtonItem, _flexibleSpace, _refreshButtonItem], animated: false)
+                    _toolbar.setItems([_backButtonItem, _forwardButtonItem, _flexibleSpace, _refreshButtonItem, _flexibleSpace, _actionBarButtonItem], animated: false)
                 } else if !value && _showsStopRefreshControl {
-                    _toolbar.setItems([_backButtonItem, _forwardButtonItem], animated: false)
+                    _toolbar.setItems([_backButtonItem, _forwardButtonItem, _flexibleSpace, _actionBarButtonItem], animated: false)
                 }
             }
             
@@ -130,6 +131,9 @@ class GDWebViewNavigationToolbar: UIView {
     fileprivate var _toolbarTranslucent = true
     fileprivate var _showsStopRefreshControl = true
     
+    // MARK: Self Add
+    fileprivate lazy var _actionBarButtonItem: UIBarButtonItem = {UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.action, target: self, action: #selector(GDWebViewNavigationToolbar.activity))}()
+    
     // MARK: Public Methods
     
     func loadDidStart() {
@@ -137,7 +141,7 @@ class GDWebViewNavigationToolbar: UIView {
             return
         }
         
-        let items = [_backButtonItem, _forwardButtonItem, _flexibleSpace, _stopButtonItem]
+        let items = [_backButtonItem, _forwardButtonItem, _flexibleSpace, _stopButtonItem, _flexibleSpace, _actionBarButtonItem]
         _toolbar.setItems(items, animated: true)
     }
     
@@ -146,7 +150,7 @@ class GDWebViewNavigationToolbar: UIView {
             return
         }
         
-        let items = [_backButtonItem, _forwardButtonItem, _flexibleSpace, _refreshButtonItem]
+        let items = [_backButtonItem, _forwardButtonItem, _flexibleSpace, _refreshButtonItem, _flexibleSpace, _actionBarButtonItem]
         _toolbar.setItems(items, animated: true)
     }
     
@@ -165,6 +169,11 @@ class GDWebViewNavigationToolbar: UIView {
     
     func stop() {
         delegate?.webViewNavigationToolbarStop(self)
+    }
+    
+    // MARK: Self Add
+    func activity() {
+        delegate?.webViewNavigationToolbarActivity(self)
     }
     
     // MARK: Life Cycle
@@ -196,7 +205,7 @@ class GDWebViewNavigationToolbar: UIView {
             self.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|-0-[toolbar]-0-|", options: [], metrics: nil, views: ["toolbar": _toolbar]))
 			
             // Set up _toolbar
-            let items = _showsStopRefreshControl ? [_backButtonItem, _forwardButtonItem, _flexibleSpace, _refreshButtonItem] : [_backButtonItem, _forwardButtonItem]
+            let items = _showsStopRefreshControl ? [_backButtonItem, _forwardButtonItem, _flexibleSpace, _refreshButtonItem, _flexibleSpace, _actionBarButtonItem] : [_backButtonItem, _forwardButtonItem, _flexibleSpace, _actionBarButtonItem]
             _toolbar.setItems(items, animated: false)
         }
     }
