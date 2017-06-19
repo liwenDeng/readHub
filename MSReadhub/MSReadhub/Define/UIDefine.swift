@@ -37,7 +37,7 @@ extension UIColor {
     /// 主题颜色
     open class var theme: UIColor {
         get {
-            return UIColor.hexString("#e32423")
+            return UIColor.hexString("#1296db")
         }
     }
     
