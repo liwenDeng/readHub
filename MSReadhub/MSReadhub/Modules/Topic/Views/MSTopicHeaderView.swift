@@ -8,6 +8,7 @@
 
 import UIKit
 import SnapKit
+import SwiftDate
 
 protocol TopicHeaderViewDelegate {
     func sectionTapped(_ section: Int)
@@ -67,8 +68,20 @@ extension MSTopicHeaderView {
         
         if let summary = topicModel.summary, let topic = topicModel.title {
             self.detail.text = summary
-            self.topic.text = topic
+//            self.topic.text = topic
+            
+            let topicText = topic
+            var dateText = ""
+            if let dateTime = topicModel.publishDate {
+                let pubilshDate = DateInRegion(string: dateTime, format: DateFormat.iso8601Auto)
+                let compare = try! pubilshDate?.colloquialSinceNow()
+                dateText = compare?.colloquial ?? ""
+            }
+            
+//            var attrybutString:
         }
+        
+
     }
     
     func onTapped() {

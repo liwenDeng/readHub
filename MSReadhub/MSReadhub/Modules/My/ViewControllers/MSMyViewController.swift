@@ -8,8 +8,9 @@
 
 import UIKit
 
-class MSMyViewController: UIViewController {
+class MSMyViewController: MSBaseTableViewController {
 
+    var cellTitles: [String] = ["我的收藏", "关于"]
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -17,20 +18,47 @@ class MSMyViewController: UIViewController {
         self.title = "我的"
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+}
+
+
+// MARK: - TableViewDataSource
+extension MSMyViewController {
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 2
     }
-    */
-
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        var cell = tableView.dequeueReusableCell(withIdentifier: "MyCell")
+        if cell == nil {
+            cell = UITableViewCell(style: .default, reuseIdentifier: "MyCell")
+        }
+        let title = cellTitles[indexPath.row]
+        cell?.textLabel?.text = title
+        cell?.accessoryType = .disclosureIndicator
+        return cell!
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 44.0
+    }
 }
+
+
+// MARK: - TableViewDeleage
+extension MSMyViewController {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.row == 0 {
+            //我的收藏
+        }
+        
+        if indexPath.row == 1 {
+            //关于
+        }
+    }
+}
+
+

@@ -6,6 +6,7 @@ target ‘MSReadhub’ do
     pod 'HandyJSON', '~> 1.7.1'
     pod 'ESPullToRefresh', '~> 2.6'
     pod 'SnapKit', '~> 3.2.0'
+    pod 'SwiftDate', '~> 4.1.2'
     
     target 'MSReadhubTests' do
         inherit! :search_paths
