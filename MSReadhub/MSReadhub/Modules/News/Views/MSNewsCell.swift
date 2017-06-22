@@ -39,7 +39,10 @@ class MSNewsCell: UITableViewCell {
 
 extension MSNewsCell {
     func config(_ new: NewModel) {
-        topic.text = new.title
-        detail.text = new.summary
+        if let title = new.title,let date = new.publishDate, let detail = new.summary {
+            topic.attributedText = MSUtil.attributeTopicWith(title, dateString: date)
+            self.detail.text = detail
+        }
+
     }
 }

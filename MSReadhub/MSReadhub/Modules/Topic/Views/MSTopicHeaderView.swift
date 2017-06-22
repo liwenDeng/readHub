@@ -51,9 +51,10 @@ class MSTopicHeaderView: UITableViewHeaderFooterView {
         
         let tapGes = UITapGestureRecognizer(target: self, action: #selector(MSTopicHeaderView.onTapped))
         contentView.addGestureRecognizer(tapGes)
+        
+        self.topic.lineBreakMode = .byTruncatingMiddle
     }
     
-
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -68,20 +69,8 @@ extension MSTopicHeaderView {
         
         if let summary = topicModel.summary, let topic = topicModel.title {
             self.detail.text = summary
-//            self.topic.text = topic
-            
-            let topicText = topic
-            var dateText = ""
-            if let dateTime = topicModel.publishDate {
-                let pubilshDate = DateInRegion(string: dateTime, format: DateFormat.iso8601Auto)
-                let compare = try! pubilshDate?.colloquialSinceNow()
-                dateText = compare?.colloquial ?? ""
-            }
-            
-//            var attrybutString:
+            self.topic.attributedText =  MSUtil.attributeTopicWith(topic, dateString: topicModel.publishDate!)
         }
-        
-
     }
     
     func onTapped() {
