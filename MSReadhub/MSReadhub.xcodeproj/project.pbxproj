@@ -11,6 +11,7 @@
 		B69DF17694818F55A14E20B6 /* Pods_MSReadhubTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 422A8C25D56E1A6EF56370D0 /* Pods_MSReadhubTests.framework */; };
 		BC066C761EFB5FA3006FB103 /* MSMyCollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC066C751EFB5FA3006FB103 /* MSMyCollectionController.swift */; };
 		BC066C781EFB60A9006FB103 /* MSCollectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC066C771EFB60A9006FB103 /* MSCollectionModel.swift */; };
+		BC066CA21EFBC78B006FB103 /* MSCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC066CA11EFBC78B006FB103 /* MSCollectionCell.swift */; };
 		BC34F10F1EF0D97E005D1332 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC34F10E1EF0D97E005D1332 /* AppDelegate.swift */; };
 		BC34F1161EF0D97E005D1332 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC34F1151EF0D97E005D1332 /* Assets.xcassets */; };
 		BC34F1191EF0D97E005D1332 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC34F1171EF0D97E005D1332 /* LaunchScreen.storyboard */; };
@@ -72,6 +73,7 @@
 		9DF25D58215F12990277F897 /* Pods-MSReadhub.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MSReadhub.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MSReadhub/Pods-MSReadhub.debug.xcconfig"; sourceTree = "<group>"; };
 		BC066C751EFB5FA3006FB103 /* MSMyCollectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSMyCollectionController.swift; sourceTree = "<group>"; };
 		BC066C771EFB60A9006FB103 /* MSCollectionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSCollectionModel.swift; sourceTree = "<group>"; };
+		BC066CA11EFBC78B006FB103 /* MSCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSCollectionCell.swift; sourceTree = "<group>"; };
 		BC34F10B1EF0D97E005D1332 /* MSReadhub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MSReadhub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC34F10E1EF0D97E005D1332 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = MSReadhub/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
 		BC34F1151EF0D97E005D1332 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
@@ -516,6 +518,7 @@
 		BC34F1691EF0DE49005D1332 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				BC066CA11EFBC78B006FB103 /* MSCollectionCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -838,6 +841,7 @@
 				BC34F1591EF0DDBE005D1332 /* MSBaseNavigationController.swift in Sources */,
 				BC4CAA511EF7746C00920EAA /* SwiftWebVCActivity.swift in Sources */,
 				BC34F17A1EF113D6005D1332 /* NewModel.swift in Sources */,
+				BC066CA21EFBC78B006FB103 /* MSCollectionCell.swift in Sources */,
 				BC34F1801EF12327005D1332 /* MSTopicCell.swift in Sources */,
 				BC066C781EFB60A9006FB103 /* MSCollectionModel.swift in Sources */,
 				BC34F10F1EF0D97E005D1332 /* AppDelegate.swift in Sources */,

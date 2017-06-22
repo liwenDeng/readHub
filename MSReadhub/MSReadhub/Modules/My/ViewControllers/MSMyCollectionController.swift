@@ -28,6 +28,8 @@ class MSMyCollectionController: MSBaseTableViewController {
     }
 }
 
+
+// MARK: - DataSource
 extension MSMyCollectionController {
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -38,20 +40,25 @@ extension MSMyCollectionController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        var cell = tableView.dequeueReusableCell(withIdentifier: "MyCollectionCell")
-        if cell == nil {
-            cell = UITableViewCell(style: .default, reuseIdentifier: "MyCollectionCell")
-        }
+        let cell: MSCollectionCell = MSCollectionCell.cellForTableView(tableView, atIndexPath: indexPath) as! MSCollectionCell
         let collection = listDatas[indexPath.row]
-        cell?.textLabel?.text = collection.title
-        return cell!
-    }
-    
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 44.0
+        cell.config(collection)
+        return cell
     }
 }
 
+
+// MARK: - Delegate
+extension MSMyCollectionController {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let item = listDatas[indexPath.row]
+        let webVC = MSWebViewController()
+        webVC.urlString = item.url
+        navigationController?.pushViewController(webVC, animated: true)
+    }
+}
+
+// MARK: - Edit
 extension MSMyCollectionController {
     func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         return true

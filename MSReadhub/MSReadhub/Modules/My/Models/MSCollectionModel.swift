@@ -12,6 +12,7 @@ import RealmSwift
 class MSCollectionModel: Object {
     dynamic var title: String = ""
     dynamic var url: String = ""
+    dynamic var dateTime: String = ""
     
     override static func primaryKey() -> String? {
         return "url"

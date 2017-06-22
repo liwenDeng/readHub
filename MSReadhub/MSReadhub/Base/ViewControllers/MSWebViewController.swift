@@ -36,8 +36,9 @@ class MSWebViewController: GDWebViewController {
     func rightBarButtonClicked() {
         
         let item: MSCollectionModel = MSCollectionModel()
-        item.title = webView.title ?? ""
+        item.title = title ?? webView.title ?? ""
         item.url = webView.url?.absoluteString ?? ""
+        item.dateTime = Date().string(format: .iso8601Auto)
         
         let realm = try! Realm()
         try! realm.write {
