@@ -8,6 +8,7 @@
 
 import UIKit
 import WebKit
+import RealmSwift
 
 class MSWebViewController: GDWebViewController {
 
@@ -24,22 +25,47 @@ class MSWebViewController: GDWebViewController {
         self.showToolbar(true, animated: true)
         delegate = self
         
+        let rightBarButton: UIBarButtonItem = UIBarButtonItem(barButtonSystemItem:.save, target: self, action:#selector(rightBarButtonClicked))
+        navigationItem.rightBarButtonItem =  rightBarButton
+        
         if let urlString = urlString {
             loadURLWithString(urlString)
         }
-        
-        let rightBarButton: UIBarButtonItem = UIBarButtonItem(barButtonSystemItem:.save, target: self, action:#selector(rightBarButtonClicked))
-        navigationItem.rightBarButtonItem =  rightBarButton
     }
     
     func rightBarButtonClicked() {
-        print("save")
+        
+        let item: MSCollectionModel = MSCollectionModel()
+        item.title = webView.title ?? ""
+        item.url = webView.url?.absoluteString ?? ""
+        
+        let realm = try! Realm()
+        try! realm.write {
+            realm.add(item, update: true)
+        }
+      
+        navigationItem.rightBarButtonItem?.isEnabled = false
     }
-
+    
+    override func loadURLWithString(_ URLString: String) {
+        super.loadURLWithString(URLString)
+        let realm = try! Realm()
+        let items = realm.objects(MSCollectionModel.self).filter("url == %@", URLString)
+        
+        navigationItem.rightBarButtonItem?.isEnabled = items.isEmpty
+    }
+    
 }
 
 extension MSWebViewController: GDWebViewControllerDelegate {
     func webViewController(_ webViewController: GDWebViewController, didChangeTitle newTitle: NSString?) {
         self.title = newTitle as String?
+    }
+    
+    func webViewController(_ webViewController: GDWebViewController, didChangeURL newURL: URL?) {
+        let realm = try! Realm()
+        let items = realm.objects(MSCollectionModel.self).filter("url == %@", newURL?.absoluteString ?? "")
+        
+        navigationItem.rightBarButtonItem?.isEnabled = items.isEmpty
     }
 }

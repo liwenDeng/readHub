@@ -7,6 +7,7 @@ target ‘MSReadhub’ do
     pod 'ESPullToRefresh', '~> 2.6'
     pod 'SnapKit', '~> 3.2.0'
     pod 'SwiftDate', '~> 4.1.2'
+    pod 'RealmSwift', '~> 2.7.0'
     
     target 'MSReadhubTests' do
         inherit! :search_paths
@@ -18,3 +19,4 @@ target ‘MSReadhub’ do
         # Pods for testing
     end
 end
+

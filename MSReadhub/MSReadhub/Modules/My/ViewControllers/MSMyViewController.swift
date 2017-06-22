@@ -20,7 +20,6 @@ class MSMyViewController: MSBaseTableViewController {
 
 }
 
-
 // MARK: - TableViewDataSource
 extension MSMyViewController {
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -53,6 +52,9 @@ extension MSMyViewController {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.row == 0 {
             //我的收藏
+            let collectionVC = MSMyCollectionController()
+            collectionVC.hidesBottomBarWhenPushed = true
+            navigationController?.pushViewController(collectionVC, animated: true)
         }
         
         if indexPath.row == 1 {

@@ -85,8 +85,9 @@ open class GDWebViewController: UIViewController, WKNavigationDelegate, WKUIDele
     /** Boolean flag which indicates whether JavaScript alerts are allowed. Default is `true`. */
     open var allowJavaScriptAlerts = true
     
+    open var webView: WKWebView!
+    
     // MARK: Private Properties
-    fileprivate var webView: WKWebView!
     fileprivate var progressView: UIProgressView!
     fileprivate var toolbarContainer: GDWebViewNavigationToolbar!
     fileprivate var toolbarHeightConstraint: NSLayoutConstraint!
