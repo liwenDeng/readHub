@@ -15,8 +15,6 @@
 		BC066CAE1EFCD161006FB103 /* launchHub.png in Resources */ = {isa = PBXBuildFile; fileRef = BC066CA81EFCD161006FB103 /* launchHub.png */; };
 		BC066CAF1EFCD161006FB103 /* launchHub@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC066CAA1EFCD161006FB103 /* launchHub@2x.png */; };
 		BC066CB01EFCD161006FB103 /* launchHub@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC066CAC1EFCD161006FB103 /* launchHub@3x.png */; };
-		BC066CB41EFCF2AA006FB103 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC066CB21EFCF2AA006FB103 /* GoogleMobileAds.framework */; };
-		BC066CB51EFCF2AA006FB103 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = BC066CB31EFCF2AA006FB103 /* README.txt */; };
 		BC34F10F1EF0D97E005D1332 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC34F10E1EF0D97E005D1332 /* AppDelegate.swift */; };
 		BC34F1161EF0D97E005D1332 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC34F1151EF0D97E005D1332 /* Assets.xcassets */; };
 		BC34F1191EF0D97E005D1332 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC34F1171EF0D97E005D1332 /* LaunchScreen.storyboard */; };
@@ -82,8 +80,6 @@
 		BC066CA91EFCD161006FB103 /* Base */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Base; path = MSReadhub/Base.lproj/launchHub.png; sourceTree = "<group>"; };
 		BC066CAB1EFCD161006FB103 /* Base */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Base; path = "MSReadhub/Base.lproj/launchHub@2x.png"; sourceTree = "<group>"; };
 		BC066CAD1EFCD161006FB103 /* Base */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Base; path = "MSReadhub/Base.lproj/launchHub@3x.png"; sourceTree = "<group>"; };
-		BC066CB21EFCF2AA006FB103 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
-		BC066CB31EFCF2AA006FB103 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 		BC34F10B1EF0D97E005D1332 /* MSReadhub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MSReadhub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC34F10E1EF0D97E005D1332 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = MSReadhub/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
 		BC34F1151EF0D97E005D1332 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
@@ -126,7 +122,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC066CB41EFCF2AA006FB103 /* GoogleMobileAds.framework in Frameworks */,
 				7445208205400E07EF382FDC /* Pods_MSReadhub.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -161,15 +156,6 @@
 				2A42715C1F651014C3C905FC /* Pods-MSReadhubUITests.release.xcconfig */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		BC066CB11EFCF2AA006FB103 /* GoogleMobileAdsSdkiOS-7.21.0 */ = {
-			isa = PBXGroup;
-			children = (
-				BC066CB21EFCF2AA006FB103 /* GoogleMobileAds.framework */,
-				BC066CB31EFCF2AA006FB103 /* README.txt */,
-			);
-			path = "GoogleMobileAdsSdkiOS-7.21.0";
 			sourceTree = "<group>";
 		};
 		BC34F1021EF0D97E005D1332 = {
@@ -250,7 +236,6 @@
 		BC34F13F1EF0DBF4005D1332 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
-				BC066CB11EFCF2AA006FB103 /* GoogleMobileAdsSdkiOS-7.21.0 */,
 				BC066CA81EFCD161006FB103 /* launchHub.png */,
 				BC066CAA1EFCD161006FB103 /* launchHub@2x.png */,
 				BC066CAC1EFCD161006FB103 /* launchHub@3x.png */,
@@ -689,7 +674,6 @@
 				BC34F1161EF0D97E005D1332 /* Assets.xcassets in Resources */,
 				BC066CB01EFCD161006FB103 /* launchHub@3x.png in Resources */,
 				BC066CAE1EFCD161006FB103 /* launchHub.png in Resources */,
-				BC066CB51EFCF2AA006FB103 /* README.txt in Resources */,
 				BC066CAF1EFCD161006FB103 /* launchHub@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
