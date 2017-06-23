@@ -12,6 +12,9 @@
 		BC066C761EFB5FA3006FB103 /* MSMyCollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC066C751EFB5FA3006FB103 /* MSMyCollectionController.swift */; };
 		BC066C781EFB60A9006FB103 /* MSCollectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC066C771EFB60A9006FB103 /* MSCollectionModel.swift */; };
 		BC066CA21EFBC78B006FB103 /* MSCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC066CA11EFBC78B006FB103 /* MSCollectionCell.swift */; };
+		BC066CAE1EFCD161006FB103 /* launchHub.png in Resources */ = {isa = PBXBuildFile; fileRef = BC066CA81EFCD161006FB103 /* launchHub.png */; };
+		BC066CAF1EFCD161006FB103 /* launchHub@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC066CAA1EFCD161006FB103 /* launchHub@2x.png */; };
+		BC066CB01EFCD161006FB103 /* launchHub@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC066CAC1EFCD161006FB103 /* launchHub@3x.png */; };
 		BC34F10F1EF0D97E005D1332 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC34F10E1EF0D97E005D1332 /* AppDelegate.swift */; };
 		BC34F1161EF0D97E005D1332 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC34F1151EF0D97E005D1332 /* Assets.xcassets */; };
 		BC34F1191EF0D97E005D1332 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC34F1171EF0D97E005D1332 /* LaunchScreen.storyboard */; };
@@ -74,6 +77,9 @@
 		BC066C751EFB5FA3006FB103 /* MSMyCollectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSMyCollectionController.swift; sourceTree = "<group>"; };
 		BC066C771EFB60A9006FB103 /* MSCollectionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSCollectionModel.swift; sourceTree = "<group>"; };
 		BC066CA11EFBC78B006FB103 /* MSCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSCollectionCell.swift; sourceTree = "<group>"; };
+		BC066CA91EFCD161006FB103 /* Base */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Base; path = MSReadhub/Base.lproj/launchHub.png; sourceTree = "<group>"; };
+		BC066CAB1EFCD161006FB103 /* Base */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Base; path = "MSReadhub/Base.lproj/launchHub@2x.png"; sourceTree = "<group>"; };
+		BC066CAD1EFCD161006FB103 /* Base */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Base; path = "MSReadhub/Base.lproj/launchHub@3x.png"; sourceTree = "<group>"; };
 		BC34F10B1EF0D97E005D1332 /* MSReadhub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MSReadhub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC34F10E1EF0D97E005D1332 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = MSReadhub/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
 		BC34F1151EF0D97E005D1332 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
@@ -230,6 +236,9 @@
 		BC34F13F1EF0DBF4005D1332 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
+				BC066CA81EFCD161006FB103 /* launchHub.png */,
+				BC066CAA1EFCD161006FB103 /* launchHub@2x.png */,
+				BC066CAC1EFCD161006FB103 /* launchHub@3x.png */,
 				BC34F11A1EF0D97E005D1332 /* Info.plist */,
 				BC34F1171EF0D97E005D1332 /* LaunchScreen.storyboard */,
 			);
@@ -663,6 +672,9 @@
 			files = (
 				BC34F1191EF0D97E005D1332 /* LaunchScreen.storyboard in Resources */,
 				BC34F1161EF0D97E005D1332 /* Assets.xcassets in Resources */,
+				BC066CB01EFCD161006FB103 /* launchHub@3x.png in Resources */,
+				BC066CAE1EFCD161006FB103 /* launchHub.png in Resources */,
+				BC066CAF1EFCD161006FB103 /* launchHub@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -888,6 +900,33 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		BC066CA81EFCD161006FB103 /* launchHub.png */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC066CA91EFCD161006FB103 /* Base */,
+			);
+			name = launchHub.png;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		BC066CAA1EFCD161006FB103 /* launchHub@2x.png */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC066CAB1EFCD161006FB103 /* Base */,
+			);
+			name = "launchHub@2x.png";
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		BC066CAC1EFCD161006FB103 /* launchHub@3x.png */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC066CAD1EFCD161006FB103 /* Base */,
+			);
+			name = "launchHub@3x.png";
+			path = ../..;
+			sourceTree = "<group>";
+		};
 		BC34F1171EF0D97E005D1332 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -1000,6 +1039,7 @@
 			baseConfigurationReference = 9DF25D58215F12990277F897 /* Pods-MSReadhub.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = 86NRYD9S7M;
 				INFOPLIST_FILE = MSReadhub/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1014,6 +1054,7 @@
 			baseConfigurationReference = 7AEAFF50BCF7032A187BEAE3 /* Pods-MSReadhub.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = 86NRYD9S7M;
 				INFOPLIST_FILE = MSReadhub/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
