@@ -130,6 +130,7 @@ extension MSTopicViewController {
 // MARK: - Delegate
 extension MSTopicViewController {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
         if let new: New = topicRes?.data?[indexPath.section].newsArray?[indexPath.row] {
             let webVC = MSWebViewController()
             webVC.urlString = new.mobileUrl ?? new.url

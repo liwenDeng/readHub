@@ -105,6 +105,8 @@ extension MSNewsViewController {
 // MARK: - Delegate
 extension MSNewsViewController {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        
         let new = news[indexPath.row]
         let webVC = MSWebViewController()
         webVC.urlString = new.url

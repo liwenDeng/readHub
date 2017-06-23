@@ -50,6 +50,8 @@ extension MSMyViewController {
 // MARK: - TableViewDeleage
 extension MSMyViewController {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        
         if indexPath.row == 0 {
             //我的收藏
             let collectionVC = MSMyCollectionController()

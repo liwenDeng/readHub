@@ -8,9 +8,9 @@
 
 import UIKit
 
-let mainSize: CGFloat = 14.0
-let normalSize: CGFloat = 12.0
-let detailSize: CGFloat = 10.0
+let mainSize: CGFloat = 15.0
+let normalSize: CGFloat = 13.0
+let detailSize: CGFloat = 12.0
 
 extension UIFont {
     open class var main: UIFont {

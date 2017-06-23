@@ -18,7 +18,7 @@ class MSTechViewController: MSBaseTableViewController {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
-        self.title = "新闻"
+        self.title = "科技"
         
         tableView.estimatedRowHeight = 80
         tableView.rowHeight = UITableViewAutomaticDimension
@@ -105,6 +105,8 @@ extension MSTechViewController {
 // MARK: - Delegate
 extension MSTechViewController {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        
         let new = news[indexPath.row]
         let webVC = MSWebViewController()
         webVC.urlString = new.url

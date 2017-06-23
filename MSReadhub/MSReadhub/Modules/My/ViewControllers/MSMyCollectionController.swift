@@ -21,6 +21,9 @@ class MSMyCollectionController: MSBaseTableViewController {
         
         let realm = try! Realm()
         listDatas = realm.objects(MSCollectionModel.self)
+        
+        tableView.estimatedRowHeight = 44
+        tableView.rowHeight = UITableViewAutomaticDimension
     }
     
     override func tableViewStyle() -> UITableViewStyle {
@@ -51,6 +54,8 @@ extension MSMyCollectionController {
 // MARK: - Delegate
 extension MSMyCollectionController {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        
         let item = listDatas[indexPath.row]
         let webVC = MSWebViewController()
         webVC.urlString = item.url
