@@ -9,6 +9,9 @@ target ‘MSReadhub’ do
     pod 'SwiftDate', '~> 4.1.2'
     pod 'RealmSwift', '~> 2.7.0'
     
+    pod 'Firebase/Core'
+    pod 'Firebase/AdMob'
+    
     target 'MSReadhubTests' do
         inherit! :search_paths
         # Pods for testing

@@ -41,7 +41,7 @@ extension MSNewsCell {
     func config(_ new: NewModel) {
         if let title = new.title,let date = new.publishDate, let detail = new.summary {
             topic.attributedText = MSUtil.attributeTopicWith(title, dateString: date)
-            self.detail.text = detail
+            self.detail.text = detail.replacingOccurrences(of: "\n", with: "").replacingOccurrences(of: " ", with: "")
         }
 
     }

@@ -15,6 +15,8 @@
 		BC066CAE1EFCD161006FB103 /* launchHub.png in Resources */ = {isa = PBXBuildFile; fileRef = BC066CA81EFCD161006FB103 /* launchHub.png */; };
 		BC066CAF1EFCD161006FB103 /* launchHub@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC066CAA1EFCD161006FB103 /* launchHub@2x.png */; };
 		BC066CB01EFCD161006FB103 /* launchHub@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC066CAC1EFCD161006FB103 /* launchHub@3x.png */; };
+		BC066CB71EFCFC21006FB103 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BC066CB61EFCFC21006FB103 /* GoogleService-Info.plist */; };
+		BC066CB91EFCFCE5006FB103 /* MSADCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC066CB81EFCFCE5006FB103 /* MSADCell.swift */; };
 		BC34F10F1EF0D97E005D1332 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC34F10E1EF0D97E005D1332 /* AppDelegate.swift */; };
 		BC34F1161EF0D97E005D1332 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC34F1151EF0D97E005D1332 /* Assets.xcassets */; };
 		BC34F1191EF0D97E005D1332 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC34F1171EF0D97E005D1332 /* LaunchScreen.storyboard */; };
@@ -80,6 +82,8 @@
 		BC066CA91EFCD161006FB103 /* Base */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Base; path = MSReadhub/Base.lproj/launchHub.png; sourceTree = "<group>"; };
 		BC066CAB1EFCD161006FB103 /* Base */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Base; path = "MSReadhub/Base.lproj/launchHub@2x.png"; sourceTree = "<group>"; };
 		BC066CAD1EFCD161006FB103 /* Base */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Base; path = "MSReadhub/Base.lproj/launchHub@3x.png"; sourceTree = "<group>"; };
+		BC066CB61EFCFC21006FB103 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BC066CB81EFCFCE5006FB103 /* MSADCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSADCell.swift; sourceTree = "<group>"; };
 		BC34F10B1EF0D97E005D1332 /* MSReadhub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MSReadhub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC34F10E1EF0D97E005D1332 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = MSReadhub/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
 		BC34F1151EF0D97E005D1332 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
@@ -161,6 +165,7 @@
 		BC34F1021EF0D97E005D1332 = {
 			isa = PBXGroup;
 			children = (
+				BC066CB61EFCFC21006FB103 /* GoogleService-Info.plist */,
 				BC34F10D1EF0D97E005D1332 /* MSReadhub */,
 				BC34F1221EF0D97E005D1332 /* MSReadhubTests */,
 				BC34F12D1EF0D97E005D1332 /* MSReadhubUITests */,
@@ -324,6 +329,7 @@
 			children = (
 				BC34F17C1EF1155C005D1332 /* MSBaseTableViewCell.swift */,
 				BC4E9D8E1EF26D25002B1DF1 /* CustomLabel.swift */,
+				BC066CB81EFCFCE5006FB103 /* MSADCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -675,6 +681,7 @@
 				BC066CB01EFCD161006FB103 /* launchHub@3x.png in Resources */,
 				BC066CAE1EFCD161006FB103 /* launchHub.png in Resources */,
 				BC066CAF1EFCD161006FB103 /* launchHub@2x.png in Resources */,
+				BC066CB71EFCFC21006FB103 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -847,6 +854,7 @@
 				BC34F17B1EF113D6005D1332 /* TopicModel.swift in Sources */,
 				BC34F17D1EF1155C005D1332 /* MSBaseTableViewCell.swift in Sources */,
 				BC066C761EFB5FA3006FB103 /* MSMyCollectionController.swift in Sources */,
+				BC066CB91EFCFCE5006FB103 /* MSADCell.swift in Sources */,
 				BC4E9DA01EF3CD9B002B1DF1 /* MSWebViewController.swift in Sources */,
 				BC34F1711EF0DF7C005D1332 /* MSMyViewController.swift in Sources */,
 				BC34F16D1EF0DEF6005D1332 /* MSTechViewController.swift in Sources */,
