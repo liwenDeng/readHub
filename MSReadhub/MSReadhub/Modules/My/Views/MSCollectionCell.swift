@@ -17,8 +17,9 @@ class MSCollectionCell: UITableViewCell {
         topic.numberOfLines = 0
         topic.snp.makeConstraints { (make) in
             make.left.equalTo(contentView).offset(14)
-            make.right.equalTo(contentView).offset(-14)
+            make.right.equalTo(contentView).offset(-20)
             make.top.equalTo(contentView).offset(8)
+            make.height.greaterThanOrEqualTo(40)
             make.bottom.equalTo(contentView).offset(-8)
         }
     }

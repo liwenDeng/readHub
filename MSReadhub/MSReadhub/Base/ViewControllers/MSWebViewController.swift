@@ -25,7 +25,7 @@ class MSWebViewController: GDWebViewController {
         self.showToolbar(true, animated: true)
         delegate = self
         
-        let rightBarButton: UIBarButtonItem = UIBarButtonItem(barButtonSystemItem:.save, target: self, action:#selector(rightBarButtonClicked))
+        let rightBarButton: UIBarButtonItem = UIBarButtonItem(title: "收藏", style: .plain, target: self, action: #selector(rightBarButtonClicked))
         navigationItem.rightBarButtonItem =  rightBarButton
         
         if let urlString = urlString {

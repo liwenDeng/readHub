@@ -44,6 +44,7 @@ extension MSMyCollectionController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: MSCollectionCell = MSCollectionCell.cellForTableView(tableView, atIndexPath: indexPath) as! MSCollectionCell
+        cell.accessoryType = .disclosureIndicator
         let collection = listDatas[indexPath.row]
         cell.config(collection)
         return cell
